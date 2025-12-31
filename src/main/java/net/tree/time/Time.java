@@ -2,6 +2,8 @@ package net.tree.time;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.tree.time.block.ModBlocks;
+import net.tree.time.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,5 +22,7 @@ public class Time implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
